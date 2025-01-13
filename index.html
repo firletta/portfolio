@@ -1,104 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Anna Ald&uuml;z</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_16.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  </head>
-    <header class="header">
-      <div class="logo">
-          <svg aria-labelledby="logoTitle" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" ><path d="M9,10L10,10L10,11L9,11M7,10L8,10L8,11L7,11M8,11L9,11L9,12L8,12M10,11L11,11L11,12L10,12M6,11L7,11L7,12L6,12M7,12L8,12L8,13L7,13M8,12L9,12L9,13L8,13M9,12L10,12L10,13L9,13M10,12L11,12L11,13L10,13M7,9L8,9L8,10L7,10M8,9L9,9L9,10L8,10M9,9L10,9L10,10L9,10M10,9L11,9L11,10L10,10M6,9L7,9L7,10L6,10M10,10L11,10L11,11L10,11M11,10L12,10L12,11L11,11M12,10L13,10L13,11L12,11M13,10L14,10L14,11L13,11M14,10L15,10L15,11L14,11M15,9L16,9L16,10L15,10M15,10L16,10L16,11L15,11M6,10L7,10L7,11L6,11M5,10L6,10L6,11L5,11M4,10L5,10L5,11L4,11M3,10L4,10L4,11L3,11M2,10L3,10L3,11L2,11M1,9L2,9L2,10L1,10M1,10L2,10L2,11L1,11M14,9L15,9L15,10L14,10M2,9L3,9L3,10L2,10M0,9L1,9L1,10L0,10M0,10L1,10L1,11L0,11M0,11L1,11L1,12L0,12M1,11L2,11L2,12L1,12M2,11L3,11L3,12L2,12M3,11L4,11L4,12L3,12M4,11L5,11L5,12L4,12M5,11L6,11L6,12L5,12M11,11L12,11L12,12L11,12M12,11L13,11L13,12L12,12M13,11L14,11L14,12L13,12M14,11L15,11L15,12L14,12M15,11L16,11L16,12L15,12M16,11L17,11L17,12L16,12M16,10L17,10L17,11L16,11M16,9L17,9L17,10L16,10M15,12L16,12L16,13L15,13M14,12L15,12L15,13L14,13M13,12L14,12L14,13L13,13M12,12L13,12L13,13L12,13M11,12L12,12L12,13L11,13M6,12L7,12L7,13L6,13M5,12L6,12L6,13L5,13M4,12L5,12L5,13L4,13M3,12L4,12L4,13L3,13M2,12L3,12L3,13L2,13M1,12L2,12L2,13L1,13M3,13L4,13L4,14L3,14M4,13L5,13L5,14L4,14M5,13L6,13L6,14L5,14M6,13L7,13L7,14L6,14M7,13L8,13L8,14L7,14M8,13L9,13L9,14L8,14M9,13L10,13L10,14L9,14M10,13L11,13L11,14L10,14M11,13L12,13L12,14L11,14M12,13L13,13L13,14L12,14M13,13L14,13L14,14L13,14M15,8L16,8L16,9L15,9M14,8L15,8L15,9L14,9M13,8L14,8L14,9L13,9M12,8L13,8L13,9L12,9M11,8L12,8L12,9L11,9M10,8L11,8L11,9L10,9M9,8L10,8L10,9L9,9M8,8L9,8L9,9L8,9M7,8L8,8L8,9L7,9M6,8L7,8L7,9L6,9M5,8L6,8L6,9L5,9M4,8L5,8L5,9L4,9M3,8L4,8L4,9L3,9M2,8L3,8L3,9L2,9M1,8L2,8L2,9L1,9M1,7L2,7L2,8L1,8M2,7L3,7L3,8L2,8M3,7L4,7L4,8L3,8M4,7L5,7L5,8L4,8M5,7L6,7L6,8L5,8M6,7L7,7L7,8L6,8M7,7L8,7L8,8L7,8M8,7L9,7L9,8L8,8M9,7L10,7L10,8L9,8M10,7L11,7L11,8L10,8M11,7L12,7L12,8L11,8M12,7L13,7L13,8L12,8M13,7L14,7L14,8L13,8M14,7L15,7L15,8L14,8M15,7L16,7L16,8L15,8M14,6L15,6L15,7L14,7M13,6L14,6L14,7L13,7M12,6L13,6L13,7L12,7M11,6L12,6L12,7L11,7M10,6L11,6L11,7L10,7M6,6L7,6L7,7L6,7M5,6L6,6L6,7L5,7M4,6L5,6L5,7L4,7M3,6L4,6L4,7L3,7M2,6L3,6L3,7L2,7M2,5L3,5L3,6L2,6M3,5L4,5L4,6L3,6M5,5L6,5L6,6L5,6M6,5L7,5L7,6L6,6M10,5L11,5L11,6L10,6M11,5L12,5L12,6L11,6M13,5L14,5L14,6L13,6M14,5L15,5L15,6L14,6M13,3L14,3L14,4L13,4M13,4L14,4L14,5L13,5M3,3L4,3L4,4L3,4M3,4L4,4L4,5L3,5M4,3L5,3L5,4L4,4M5,3L6,3L6,4L5,4M5,4L6,4L6,5L5,5M12,3L13,3L13,4L12,4M11,3L12,3L12,4L11,4M11,4L12,4L12,5L11,5M4,2L5,2L5,3L4,3M12,2L13,2L13,3L12,3"/></svg>
-          <title id="logoTitle">Pixel Cat</title>
-      </div>
-      <div class="title">
-        <h1>
-          Anna Ald&uuml;z
-        </h1>
-        <p>
-          illustration <span class="decoration">•</span> design <span class="decoration">•</span> development
-        </p>
-      </div>
-    </header>
-    <main class="main">
-        <p><!-- My portfolio reflects both my professional work and personal creative projects. --> Since I'm not active on any social media, the best way to get in touch is to shoot me an email.</p>
-        <div class="buttons">
-          <div class="button button-primary">
-            <a href="mailto:anna@annaalduz.com">
-              <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>
-            Email me
-          </a>
-          </div>
-          <div class="button button-primary">
-            <a href="mailto:anna@annaalduz.com">
-              <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2"> <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path> <path d="M7 11l5 5l5 -5"></path><path d="M12 4l0 12"></path></svg> 
-            Download my CV
-          </a>
-          </div>
-        </div>
-      <div class="horizontal-line"></div>
-        <h2>Featured Projects</h2>
-        <div class="projects">
-          <div class="project-card">Project 1</div>
-          <div class="project-card">Project 2</div>
-          <div class="project-card">Project 3</div>
-          <div class="project-card">Project 4</div>
-        </div>
-        <div class="buttons">
-          <div class="button button-primary">
-            <a href="mailto:anna@annaalduz.com">
-              <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M17 7l-10 10"></path> <path d="M8 7l9 0l0 9"></path></svg> 
-            See all projects
-          </a>
-          </div>
-        </div>
-      <div class="horizontal-line"></div>
-        <h2>Key Skills</h2>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Jinja</li>
-          <li>Python</li>
-          <li>Django</li>
-          <li>SQL</li>
-          <li>Git</li>
-          <li>Bloomreach Engagement</li>
-          <li>Figma</li>
-          <li>Adobe Photoshop</li>
-          <li>Adobe Illustrator</li>
-          <li>Procreate</li>
-          <li>Affinity Photo</li>
-          <li>Affinity Designer</li>
-          <li>Affinity Publisher</li>
-        </ul>
-        
-      
-      </section>
-      <div class="horizontal-line"></div>
-        <h2>Recent Work Experience</h2>
-        <div class="buttons">
-          <div class="button button-primary">
-            <a href="mailto:anna@annaalduz.com">
-              <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2"> <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path> <path d="M7 11l5 5l5 -5"></path><path d="M12 4l0 12"></path></svg> 
-            Download full CV
-          </a>
-          </div>
-        </div>
-      <div class="horizontal-line"></div>
-        <h2>Github Contributions</h2>
-        <div class="button button-transparent">
+<head>
+
+  <title>Anna Ald&uuml;z</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- favicons -->
+  <link rel="icon" href="assets/images/favicon-dark-32px.png" sizes="32x32" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="assets/images/favicon-dark.svg" type="image/svg+xml"media="(prefers-color-scheme: light)">
+  <link rel="apple-touch-icon" href="assets/images/favicon-dark-180px.png"media="(prefers-color-scheme: light)">
+  <link rel="icon" href="assets/images/favicon-light-32px.png" sizes="32x32" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/images/favicon-light.svg" type="image/svg+xml"media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="assets/images/favicon-light-180px.png"media="(prefers-color-scheme: dark)">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logoTitle" version="1.1" xml:space="preserve" shape-rendering="crispEdges" viewBox="0 2 17 12"><path d="M9,10L10,10L10,11L9,11M7,10L8,10L8,11L7,11M8,11L9,11L9,12L8,12M10,11L11,11L11,12L10,12M6,11L7,11L7,12L6,12M7,12L8,12L8,13L7,13M8,12L9,12L9,13L8,13M9,12L10,12L10,13L9,13M10,12L11,12L11,13L10,13M7,9L8,9L8,10L7,10M8,9L9,9L9,10L8,10M9,9L10,9L10,10L9,10M10,9L11,9L11,10L10,10M6,9L7,9L7,10L6,10M10,10L11,10L11,11L10,11M11,10L12,10L12,11L11,11M12,10L13,10L13,11L12,11M13,10L14,10L14,11L13,11M14,10L15,10L15,11L14,11M15,9L16,9L16,10L15,10M15,10L16,10L16,11L15,11M6,10L7,10L7,11L6,11M5,10L6,10L6,11L5,11M4,10L5,10L5,11L4,11M3,10L4,10L4,11L3,11M2,10L3,10L3,11L2,11M1,9L2,9L2,10L1,10M1,10L2,10L2,11L1,11M14,9L15,9L15,10L14,10M2,9L3,9L3,10L2,10M0,9L1,9L1,10L0,10M0,10L1,10L1,11L0,11M0,11L1,11L1,12L0,12M1,11L2,11L2,12L1,12M2,11L3,11L3,12L2,12M3,11L4,11L4,12L3,12M4,11L5,11L5,12L4,12M5,11L6,11L6,12L5,12M11,11L12,11L12,12L11,12M12,11L13,11L13,12L12,12M13,11L14,11L14,12L13,12M14,11L15,11L15,12L14,12M15,11L16,11L16,12L15,12M16,11L17,11L17,12L16,12M16,10L17,10L17,11L16,11M16,9L17,9L17,10L16,10M15,12L16,12L16,13L15,13M14,12L15,12L15,13L14,13M13,12L14,12L14,13L13,13M12,12L13,12L13,13L12,13M11,12L12,12L12,13L11,13M6,12L7,12L7,13L6,13M5,12L6,12L6,13L5,13M4,12L5,12L5,13L4,13M3,12L4,12L4,13L3,13M2,12L3,12L3,13L2,13M1,12L2,12L2,13L1,13M3,13L4,13L4,14L3,14M4,13L5,13L5,14L4,14M5,13L6,13L6,14L5,14M6,13L7,13L7,14L6,14M7,13L8,13L8,14L7,14M8,13L9,13L9,14L8,14M9,13L10,13L10,14L9,14M10,13L11,13L11,14L10,14M11,13L12,13L12,14L11,14M12,13L13,13L13,14L12,14M13,13L14,13L14,14L13,14M15,8L16,8L16,9L15,9M14,8L15,8L15,9L14,9M13,8L14,8L14,9L13,9M12,8L13,8L13,9L12,9M11,8L12,8L12,9L11,9M10,8L11,8L11,9L10,9M9,8L10,8L10,9L9,9M8,8L9,8L9,9L8,9M7,8L8,8L8,9L7,9M6,8L7,8L7,9L6,9M5,8L6,8L6,9L5,9M4,8L5,8L5,9L4,9M3,8L4,8L4,9L3,9M2,8L3,8L3,9L2,9M1,8L2,8L2,9L1,9M1,7L2,7L2,8L1,8M2,7L3,7L3,8L2,8M3,7L4,7L4,8L3,8M4,7L5,7L5,8L4,8M5,7L6,7L6,8L5,8M6,7L7,7L7,8L6,8M7,7L8,7L8,8L7,8M8,7L9,7L9,8L8,8M9,7L10,7L10,8L9,8M10,7L11,7L11,8L10,8M11,7L12,7L12,8L11,8M12,7L13,7L13,8L12,8M13,7L14,7L14,8L13,8M14,7L15,7L15,8L14,8M15,7L16,7L16,8L15,8M14,6L15,6L15,7L14,7M13,6L14,6L14,7L13,7M12,6L13,6L13,7L12,7M11,6L12,6L12,7L11,7M10,6L11,6L11,7L10,7M6,6L7,6L7,7L6,7M5,6L6,6L6,7L5,7M4,6L5,6L5,7L4,7M3,6L4,6L4,7L3,7M2,6L3,6L3,7L2,7M2,5L3,5L3,6L2,6M3,5L4,5L4,6L3,6M5,5L6,5L6,6L5,6M6,5L7,5L7,6L6,6M10,5L11,5L11,6L10,6M11,5L12,5L12,6L11,6M13,5L14,5L14,6L13,6M14,5L15,5L15,6L14,6M13,3L14,3L14,4L13,4M13,4L14,4L14,5L13,5M3,3L4,3L4,4L3,4M3,4L4,4L4,5L3,5M4,3L5,3L5,4L4,4M5,3L6,3L6,4L5,4M5,4L6,4L6,5L5,5M12,3L13,3L13,4L12,4M11,3L12,3L12,4L11,4M11,4L12,4L12,5L11,5M4,2L5,2L5,3L4,3M12,2L13,2L13,3L12,3"></path></svg>
+        <title id="logoTitle">Pixel Cat</title>
+    </div>
+    <div class="title">
+      <h1>
+        Anna Ald&uuml;z
+      </h1>
+      <p>
+        illustration <span class="decoration">•</span> design <span class="decoration">•</span> development
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+      <p>My portfolio reflects both my professional work and personal creative projects. Since I'm not active on any social media, the best way to get in touch is to shoot me an email.</p>
+      <div class="buttons">
+        <div class="button button-primary scale-on-hover-l">
           <a href="mailto:anna@annaalduz.com">
-        <img src="http://ghchart.rshah.org/firletta" alt="Github chart" />
+            <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>
+          Email me
         </a>
         </div>
-      <div class="horizontal-line"></div>
-</main>
-  </body>
+        <!-- <div class="button button-primary scale-on-hover-l">
+          <a href="mailto:anna@annaalduz.com">
+            <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2"> <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path> <path d="M7 11l5 5l5 -5"></path><path d="M12 4l0 12"></path></svg> 
+          Download my CV
+        </a>
+        </div> -->
+      </div>
+
+    <div class="horizontal-line"></div>
+
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <a href="#TODO" class="project-card scale-on-hover-s">
+        <img src="https://unblast.com/wp-content/uploads/2018/08/Gradient-Mesh-22.jpg" alt="">
+        <div>
+          <h3>Project Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam</p>
+        </div>
+      </a>
+      <a href="#TODO" class="project-card scale-on-hover-s">
+        <img src="https://unblast.com/wp-content/uploads/2018/08/Gradient-Mesh-22.jpg" alt="">
+        <div>
+          <h3>Project Name</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam</p>
+        </div>
+      </a>
+    </div>
+    <div class="buttons">
+      <div class="button button-primary scale-on-hover-l">
+        <a href="mailto:anna@annaalduz.com">
+          <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M17 7l-10 10"></path> <path d="M8 7l9 0l0 9"></path></svg> 
+        See all projects
+      </a>
+      </div>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+    <h2>Key Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Jinja</li>
+      <li>Python</li>
+      <li>Django</li>
+      <li>SQL</li>
+      <li>Git</li>
+      <li>Bloomreach Engagement</li>
+      <li>Figma</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Illustrator</li>
+      <li>Procreate</li>
+      <li>Affinity Photo</li>
+      <li>Affinity Designer</li>
+      <li>Affinity Publisher</li>
+    </ul>
+
+    <div class="horizontal-line"></div>
+    
+    <h2>Recent Work Experience</h2>
+    <ul class="timeline">
+      <li>
+        <span class="timeline-date">2022</span>
+        <div class="timeline-circle"><i></i></div>
+        <div class="timeline-description">
+          <h3>Senior Email Designer & Developer</h3>
+          <p>@ <a target="_blank" rel="noopener noreferrer" href="https://www.kiwi.com">Kiwi.com</a></p>
+        </div>
+      </li>
+        <li>
+        <span class="timeline-date">2020</span>
+        <div class="timeline-circle"><i></i></div>
+        <div class="timeline-description">
+          <h3>Freelance Illustrator</h3>
+        </div>
+      </li>
+    </ul>
+
+      <!-- <div class="buttons">
+        <div class="button button-primary scale-on-hover-l">
+          <a href="">
+            <svg class="button-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2"> <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path> <path d="M7 11l5 5l5 -5"></path><path d="M12 4l0 12"></path></svg> 
+          Download full CV
+        </a>
+        </div> -->
+
+    <div class="horizontal-line"></div>
+
+    <h2>Github Contributions</h2>
+    <div class="button button-transparent scale-on-hover-s">
+      <a href="https://github.com/firletta">
+        <img src="http://ghchart.rshah.org/firletta" alt="Github chart" />
+      </a>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+  </main>
+
+</body>
 </html>
