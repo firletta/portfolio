@@ -184,7 +184,10 @@ footer {
   display: flex;
   justify-content: right;
   align-items: center;
+  gap: 12px;
+  margin: 12px;
 }
+
 p {
   margin-top: 4px;
 }
@@ -203,6 +206,11 @@ a:focus:not(:focus-visible) {
   outline:none
 }
 
+a.text-link {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
 .cat-wrapper {
   display: grid;
   justify-content: center;
@@ -217,7 +225,6 @@ a:focus:not(:focus-visible) {
   border-radius: 50%;
   background-color: var(--color-accent);
   transition: transform 150ms ease-in-out;
-  margin: 12px;
 }
 
 .logo:hover {
