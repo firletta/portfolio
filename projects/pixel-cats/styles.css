@@ -229,7 +229,6 @@ a.text-link {
 
 .logo:hover {
   transform: scale(1.05) rotate(-1deg);
-  }
 }
 
 .logo svg {
