@@ -106,7 +106,7 @@ a:focus:not(:focus-visible) {
 }
 
 .pixel-art {
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 /* DECORATIVE ELEMENTS */
