@@ -105,6 +105,10 @@ a:focus:not(:focus-visible) {
   width: 76%;
 }
 
+.pixel-art {
+  image-rendering: crisp-edges;
+}
+
 /* DECORATIVE ELEMENTS */
 
 .horizontal-line {
@@ -153,7 +157,7 @@ a:focus:not(:focus-visible) {
   font-size: var(--font-m);
   font-weight: 500;
   text-align: center;
-  transition: transform 150ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .button a {
@@ -187,6 +191,14 @@ a:focus:not(:focus-visible) {
 
 .scale-on-hover-s:hover {
   transform: scale(1.015);
+}
+
+.button:nth-child(odd):hover {
+  transform: rotate(-1deg);
+}
+
+.button:nth-child(even):hover {
+  transform: rotate(1deg);
 }
 
 /* SKILLS */
@@ -235,7 +247,15 @@ ul.skills li {
   gap: 8px;
   padding: var(--gap-s);
   text-decoration: none;
-  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 100ms ease-in-out;
+}
+
+.project-card:nth-child(odd):hover {
+  transform: rotate(-1deg);
+}
+
+.project-card:nth-child(even):hover {
+  transform: rotate(1deg);
 }
 
 .project-card img {
