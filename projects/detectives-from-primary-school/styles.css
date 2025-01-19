@@ -100,8 +100,8 @@ main {
   main {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "cover"
       "description"
+      "cover"
       "gallery";
   }
 }
