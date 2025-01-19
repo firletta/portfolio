@@ -238,7 +238,6 @@ a.text-link {
   width: 76%;
   height: 76%;
   fill: var(--color-logo);
-  shape-rendering: crispEdges;
 }
 
 
