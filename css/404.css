@@ -1,8 +1,91 @@
 /* EYES */
 
 :root {
+  --accent-color: #f1f1f1;
+  --accent-dark-color: #d4d4d4;
   --background-color: #fdfdfd;
   --primary-color: #1a1a1a;
+  --font-s: 0.875rem; /* 14px */
+  --font-m: 1rem; /* 16px */
+  --font-l: 1.125rem; /* 18px */
+  --font-xl: 1.5rem; /* 24px */
+  --font-xxl: 2.25rem; /* 36px */
+  --font-xxxl: 3rem; /* 48px */
+  --gap-s: 12px;
+  --gap-l: 24px;
+}
+
+body {
+  background: linear-gradient(90deg, var(--background-color) 20px, transparent 1%) center,
+              linear-gradient(var(--background-color) 20px, transparent 1%) center,
+              var(--accent-color);
+  background-size: 22px 22px;
+  color: var(--text-color);
+  display: grid;
+  font-family: 'Inter', Roboto, sans-serif;
+  font-size: var(--font-base);
+  gap: var(--gap-l);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: clamp(24px, 10vw, 46px) 0;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  gap: var(--gap-s);
+  justify-content: right;
+}
+
+.button {
+  font-size: var(--font-m);
+  font-weight: 500;
+  text-align: center;
+  transition: transform 100ms ease-in-out;
+}
+
+.button a {
+  color: var(--primary-color);
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.button-icon {
+  height: 20px;
+  margin-right: 2px;
+  stroke: var(--primary-color);
+  vertical-align: text-bottom;
+  width: 20px;
+}
+
+.button-primary {
+  background: var(--accent-color);
+}
+
+.button-transparent {
+  background: transparent;
+}
+
+/* TRANSFORM EFFECTS */
+
+.scale-on-hover-l:hover {
+  transform: scale(1.05);
+}
+
+.scale-on-hover-s:hover {
+  transform: scale(1.015);
+}
+
+.button:nth-child(odd):hover {
+  transform: rotate(-1deg);
+}
+
+.button:nth-child(even):hover {
+  transform: rotate(1deg);
 }
 
 .flex-centered {
@@ -11,6 +94,7 @@
   align-items: center;
   flex-direction: column;
   gap: 18px;
+
 }
 
 .eye {
