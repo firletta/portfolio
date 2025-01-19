@@ -33,7 +33,7 @@ body {
   background-size: 1000px, cover;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  padding: clamp(.5rem, 3vw, 2rem);
+  padding: clamp(1.125rem, 3vw, 2rem);
   width: 100%;
   min-height: 100dvb;
   margin: 0 auto;
