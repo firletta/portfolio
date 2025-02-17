@@ -1,0 +1,62 @@
+#cupcake {
+  background-color: coral;
+}
+
+#cupcake div {
+  outline: 1px solid lime;
+  width: 300px;
+  height: 300px;
+  top: auto;
+  left: auto;
+  background-repeat: no-repeat;
+
+  background-image:
+
+    /* cherry */
+    radial-gradient(ellipse, Crimson  50%, rgba(0, 0, 0, 0) 51%),
+
+    /* frosting */
+    radial-gradient(ellipse, LightPink 60%, rgba(0, 0, 0, 0) 61%),
+    radial-gradient(ellipse, LightPink 50%, rgba(0, 0, 0, 0) 51%),
+    radial-gradient(ellipse, LightPink 50%, rgba(0, 0, 0, 0) 51%),
+    radial-gradient(ellipse, LightPink 60%, rgba(0, 0, 0, 0) 61%),
+
+    /* cup */
+    linear-gradient(74deg, rgba(255, 255, 255, 0) 30%, IndianRed 21%),
+    linear-gradient(-74deg, rgba(255, 255, 255, 0) 30%, IndianRed 21%),
+    radial-gradient(ellipse, IndianRed 50%, rgba(0, 0, 0, 0) 51%)
+    ;
+
+  background-size:
+
+    /* cherry */
+    56px 46px,
+
+    /* frosting */
+    200px 76px,
+    84px 70px,
+    84px 70px,
+    150px 76px,
+
+    /* cup */
+    90px 86px,
+    90px 86px,
+    159px 32px;
+
+  background-position:
+
+    /* cherry */
+    50% 60px,
+
+    /* frosting */
+    50% 120px,
+    left 48px top 116px,
+    right 48px top 116px,
+    50% 80px,
+
+    /* cup */
+    left 60px bottom 50px,
+    right 60px bottom 50px,
+    50% 231px;
+
+}
