@@ -3,16 +3,53 @@
 }
 
 #cupcake div {
-  outline: 1px solid lime;
   width: 300px;
   height: 300px;
   top: auto;
   left: auto;
   background-repeat: no-repeat;
 
+  background-image: 
+    radial-gradient(ellipse, DarkSlateGrey 50%, rgba(0, 0, 0, 0) 50%),
+    radial-gradient(ellipse, White 50%, rgba(0, 0, 0, 0) 50%)
+    ;
+
+  background-size:
+    220px 80px,
+    396px 210px;
+  
+  background-position:
+    50% 184px,
+    50% 110px;
+}
+
+
+#cupcake div::before {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+
+  background-image: 
+    conic-gradient(rgba(0, 0, 0, 0) 34%, Black 34%, Black 45%, rgba(0, 0, 0, 0) 45%);
+
+  background-size: 
+    76px 92px;
+
+  background-position:
+    200px 200px;
+  
+}
+
+#cupcake div::after {
+  outline: 1px solid lime;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+
   background-image:
 
     /* cherry */
+    radial-gradient(circle, White 50%, rgba(0, 0, 0, 0) 50%),
     radial-gradient(ellipse, Crimson  50%, rgba(0, 0, 0, 0) 51%),
 
     /* frosting */
@@ -30,6 +67,7 @@
   background-size:
 
     /* cherry */
+    8px 8px,
     56px 46px,
 
     /* frosting */
@@ -46,17 +84,18 @@
   background-position:
 
     /* cherry */
-    50% 60px,
+    53% 52px,
+    50% 40px,
 
     /* frosting */
-    50% 120px,
-    left 48px top 116px,
-    right 48px top 116px,
-    50% 80px,
+    50% 100px,
+    left 48px top 96px,
+    right 48px top 96px,
+    50% 60px,
 
     /* cup */
-    left 60px bottom 50px,
-    right 60px bottom 50px,
-    50% 231px;
+    left 60px bottom 70px,
+    right 60px bottom 70px,
+    50% 211px;
 
 }
