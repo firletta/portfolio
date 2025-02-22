@@ -1,5 +1,15 @@
+:root {
+  --transparent: rgba(0, 0, 0, 0);
+  --cupcake-background: Coral;
+  --cupcake-cherry: Crimson;
+  --cupcake-frosting: LightPink;
+  --cupcake-cup: IndianRed;
+  --cupcake-trap: DarkSlateGrey;
+  --cupcake-shadow: rgba(0, 0, 0, 0.3);
+}
+
 #cupcake {
-  background-color: coral;
+  background-color: var(--cupcake-background);
 }
 
 #cupcake div {
@@ -10,17 +20,34 @@
   background-repeat: no-repeat;
 
   background-image: 
-    radial-gradient(ellipse, DarkSlateGrey 50%, rgba(0, 0, 0, 0) 50%),
-    radial-gradient(ellipse, White 50%, rgba(0, 0, 0, 0) 50%)
+    radial-gradient(ellipse, var(--cupcake-shadow) 50%, var(--transparent) 50%),
+    radial-gradient(ellipse, var(--cupcake-trap) 50%, var(--transparent) 50%),
+    linear-gradient(12deg,var(--transparent) 41%, var(--cupcake-shadow) 41%, var(--cupcake-shadow) 47%, var(--transparent) 47%),
+    linear-gradient(12deg,var(--transparent) 41%, var(--cupcake-trap) 41%, var(--cupcake-trap) 47%, var(--transparent) 47%),
+    radial-gradient(ellipse, var(--cupcake-background) 50%, var(--transparent) 50%),
+    radial-gradient(ellipse at 50% 100%, var(--cupcake-shadow) 50%, var(--transparent) 50%),
+    radial-gradient(ellipse, var(--cupcake-trap) 50%, var(--transparent) 50%)
     ;
 
   background-size:
     220px 80px,
+    220px 80px,
+    240px 100px,
+    240px 100px,
+    350px 152px,
+    396px 105px,
     396px 210px;
   
   background-position:
-    50% 184px,
-    50% 110px;
+    52% 184px,
+    52% 184px,
+    46% 164px,
+    46% 164px,
+    50% 144px,
+    48% 116px,
+    48% 116px;
+    
+    transform: rotate(3deg)
 }
 
 
@@ -29,15 +56,29 @@
   height: 300px;
   background-repeat: no-repeat;
 
-  background-image: 
-    conic-gradient(rgba(0, 0, 0, 0) 34%, Black 34%, Black 45%, rgba(0, 0, 0, 0) 45%);
+  background-image:
+    conic-gradient(var(--transparent) 47%, var(--cupcake-trap) 47%, var(--cupcake-trap) 51%, var(--transparent) 51%),
+    conic-gradient(var(--transparent) 47%, var(--cupcake-trap) 47%, var(--cupcake-trap) 54%, var(--transparent) 54%),
+    conic-gradient(var(--transparent) 46%, var(--cupcake-trap) 46%, var(--cupcake-trap) 56%, var(--transparent) 56%),
+    conic-gradient(var(--transparent) 45%, var(--cupcake-trap) 45%, var(--cupcake-trap) 58%, var(--transparent) 58%)
+    ;
 
-  background-size: 
-    76px 92px;
+  background-size:
+    15px 80px,
+    20px 92px,
+    40px 120px,
+    50px 116px
+    ;
 
   background-position:
-    200px 200px;
+    4px 140px,
+    16px 147px,
+    32px 138px,
+    68px 156px
+;
   
+  z-index: 1;
+  transform: rotate(-3deg);
 }
 
 #cupcake div::after {
@@ -49,53 +90,55 @@
   background-image:
 
     /* cherry */
-    radial-gradient(circle, White 50%, rgba(0, 0, 0, 0) 50%),
-    radial-gradient(ellipse, Crimson  50%, rgba(0, 0, 0, 0) 51%),
+    radial-gradient(circle, White 50%, var(--transparent) 50%),
+    radial-gradient(ellipse, var(--cupcake-cherry)  50%, var(--transparent) 51%),
 
     /* frosting */
-    radial-gradient(ellipse, LightPink 60%, rgba(0, 0, 0, 0) 61%),
-    radial-gradient(ellipse, LightPink 50%, rgba(0, 0, 0, 0) 51%),
-    radial-gradient(ellipse, LightPink 50%, rgba(0, 0, 0, 0) 51%),
-    radial-gradient(ellipse, LightPink 60%, rgba(0, 0, 0, 0) 61%),
+    radial-gradient(ellipse, var(--cupcake-frosting) 60%, var(--transparent) 61%),
+    radial-gradient(ellipse, var(--cupcake-frosting) 50%, var(--transparent) 51%),
+    radial-gradient(ellipse, var(--cupcake-frosting) 50%, var(--transparent) 51%),
+    radial-gradient(ellipse, var(--cupcake-frosting) 60%, var(--transparent) 61%),
 
     /* cup */
-    linear-gradient(74deg, rgba(255, 255, 255, 0) 30%, IndianRed 21%),
-    linear-gradient(-74deg, rgba(255, 255, 255, 0) 30%, IndianRed 21%),
-    radial-gradient(ellipse, IndianRed 50%, rgba(0, 0, 0, 0) 51%)
+    linear-gradient(74deg, rgba(255, 255, 255, 0) 30%, var(--cupcake-cup) 21%),
+    linear-gradient(-74deg, rgba(255, 255, 255, 0) 30%, var(--cupcake-cup) 21%),
+    radial-gradient(ellipse, var(--cupcake-cup) 50%, var(--transparent) 51%)
     ;
 
   background-size:
 
     /* cherry */
-    8px 8px,
-    56px 46px,
+    7px 3px,
+    50px 40px,
 
     /* frosting */
-    200px 76px,
-    84px 70px,
-    84px 80px,
-    150px 76px,
+    170px 56px,
+    64px 62px,
+    64px 65px,
+    130px 80px,
 
     /* cup */
-    90px 86px,
-    90px 86px,
-    159px 32px;
+    75px 66px,
+    75px 66px,
+    126px 12px;
 
   background-position:
 
     /* cherry */
-    53% 52px,
-    50% 40px,
+    53% 64px,
+    50% 52px,
 
     /* frosting */
-    50% 100px,
-    left 48px top 96px,
-    right 48px top 90px,
-    50% 60px,
+    50% 126px,
+    left 64px top 114px,
+    right 64px top 110px,
+    50% 72px,
 
     /* cup */
-    left 60px bottom 70px,
-    right 60px bottom 70px,
-    50% 211px;
+    left 76px bottom 70px,
+    right 76px bottom 70px,
+    50% 224px;
+
+    transform: rotate(-2deg)
 
 }
