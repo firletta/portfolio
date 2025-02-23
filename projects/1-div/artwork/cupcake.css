@@ -5,47 +5,137 @@
   --cupcake-frosting: LightPink;
   --cupcake-cup: IndianRed;
   --cupcake-trap: DarkSlateGrey;
-  --cupcake-shadow: rgba(0, 0, 0, 0.3);
+  --cupcake-shadow: rgba(0, 0, 50, 0.3);
+  --cupcake-highlight: rgba(255, 255, 200, 0.9);
 }
 
 #cupcake {
   background-color: var(--cupcake-background);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+#cupcake div:before,
+#cupcake div:after {
+  display: block;
+  content: '';
+  position: absolute;
 }
 
 #cupcake div {
+  position:absolute;
+  left: auto;
+  top: 8%;
   width: 300px;
   height: 300px;
-  top: auto;
-  left: auto;
   background-repeat: no-repeat;
 
   background-image: 
+    /* bear trap */
     radial-gradient(ellipse, var(--cupcake-shadow) 50%, var(--transparent) 50%),
     radial-gradient(ellipse, var(--cupcake-trap) 50%, var(--transparent) 50%),
-    linear-gradient(12deg,var(--transparent) 41%, var(--cupcake-shadow) 41%, var(--cupcake-shadow) 47%, var(--transparent) 47%),
-    linear-gradient(12deg,var(--transparent) 41%, var(--cupcake-trap) 41%, var(--cupcake-trap) 47%, var(--transparent) 47%),
+    
+    linear-gradient(8deg,var(--transparent) 39%, var(--cupcake-shadow) 39%, var(--cupcake-shadow) 47%, var(--transparent) 47%),
+    linear-gradient(8deg,var(--transparent) 39%, var(--cupcake-trap) 39%, var(--cupcake-trap) 47%, var(--transparent) 47%),
+    
     radial-gradient(ellipse, var(--cupcake-background) 50%, var(--transparent) 50%),
     radial-gradient(ellipse at 50% 100%, var(--cupcake-shadow) 50%, var(--transparent) 50%),
-    radial-gradient(ellipse, var(--cupcake-trap) 50%, var(--transparent) 50%)
+    radial-gradient(ellipse, var(--cupcake-trap) 50%, var(--transparent) 50%),
+    
+    /* back teeth */
+    conic-gradient(var(--transparent) 41%, var(--cupcake-shadow) 41%, var(--cupcake-shadow) 50%, var(--transparent) 50%),
+    conic-gradient(var(--transparent) 41%, var(--cupcake-trap) 41%, var(--cupcake-trap) 50%, var(--transparent) 50%),
+    conic-gradient(var(--transparent) 40%, var(--cupcake-shadow) 40%, var(--cupcake-shadow) 52%, var(--transparent) 52%),
+    conic-gradient(var(--transparent) 40%, var(--cupcake-trap) 40%, var(--cupcake-trap) 52%, var(--transparent) 52%),
+    conic-gradient(var(--transparent) 40%, var(--cupcake-shadow) 40%, var(--cupcake-shadow) 54%, var(--transparent) 54%),
+    conic-gradient(var(--transparent) 40%, var(--cupcake-trap) 40%, var(--cupcake-trap) 54%, var(--transparent) 54%),
+    conic-gradient(var(--transparent) 42%, var(--cupcake-shadow) 42%, var(--cupcake-shadow) 55%, var(--transparent) 55%),
+    conic-gradient(var(--transparent) 42%, var(--cupcake-trap) 42%, var(--cupcake-trap) 55%, var(--transparent) 55%),
+    conic-gradient(var(--transparent) 43%, var(--cupcake-shadow) 43%, var(--cupcake-shadow) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 43%, var(--cupcake-trap) 43%, var(--cupcake-trap) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 44%, var(--cupcake-shadow) 44%, var(--cupcake-shadow) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 44%, var(--cupcake-trap) 44%, var(--cupcake-trap) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 46%, var(--cupcake-shadow) 46%, var(--cupcake-shadow) 59%, var(--transparent) 59%),
+    conic-gradient(var(--transparent) 46%, var(--cupcake-trap) 46%, var(--cupcake-trap) 59%, var(--transparent) 59%),
+    conic-gradient(var(--transparent) 47%, var(--cupcake-shadow) 47%, var(--cupcake-shadow) 60%, var(--transparent) 60%),
+    conic-gradient(var(--transparent) 47%, var(--cupcake-trap) 47%, var(--cupcake-trap) 60%, var(--transparent) 60%),
+    conic-gradient(var(--transparent) 48%, var(--cupcake-shadow) 48%, var(--cupcake-shadow) 59%, var(--transparent) 59%),
+    conic-gradient(var(--transparent) 48%, var(--cupcake-trap) 48%, var(--cupcake-trap) 59%, var(--transparent) 59%),
+    conic-gradient(var(--transparent) 50%, var(--cupcake-shadow) 50%, var(--cupcake-shadow) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 50%, var(--cupcake-trap) 50%, var(--cupcake-trap) 57%, var(--transparent) 57%)
     ;
 
   background-size:
+    /* bear trap */
     220px 80px,
     220px 80px,
-    240px 100px,
-    240px 100px,
-    350px 152px,
+    
+    250px 100px,
+    250px 100px,
+    
+    362px 151px,
     396px 105px,
-    396px 210px;
+    396px 210px,
+    
+    /* back teeth */
+    30px 78px,
+    30px 78px,
+    36px 82px,
+    36px 82px,
+    48px 100px,
+    48px 100px,
+    50px 110px,
+    50px 110px,
+    50px 110px,
+    50px 110px,
+    50px 110px,
+    50px 110px,
+    53px 120px,
+    53px 120px,
+    60px 130px,
+    60px 130px,
+    46px 124px,
+    46px 124px,
+    44px 120px,
+    44px 120px;
   
   background-position:
+    /* bear trap */
     52% 184px,
     52% 184px,
-    46% 164px,
-    46% 164px,
+    37% 164px,
+    37% 164px,
     50% 144px,
     48% 116px,
-    48% 116px;
+    48% 116px,
+    
+    /* back teeth */
+    -3px 142px,
+    -3px 142px,
+    5px 120px,
+    5px 120px,
+    24px 86px,
+    24px 86px,
+    58px 64px,
+    58px 64px,
+    100px 52px,
+    100px 52px,
+    142px 48px,
+    142px 48px,
+    192px 48px,
+    192px 50px,
+    226px 60px,
+    226px 60px,
+    258px 82px,
+    258px 82px,
+    268px 108px,
+    268px 108px
+    ;
     
     transform: rotate(3deg)
 }
@@ -57,32 +147,52 @@
   background-repeat: no-repeat;
 
   background-image:
-    conic-gradient(var(--transparent) 47%, var(--cupcake-trap) 47%, var(--cupcake-trap) 51%, var(--transparent) 51%),
-    conic-gradient(var(--transparent) 47%, var(--cupcake-trap) 47%, var(--cupcake-trap) 54%, var(--transparent) 54%),
-    conic-gradient(var(--transparent) 46%, var(--cupcake-trap) 46%, var(--cupcake-trap) 56%, var(--transparent) 56%),
-    conic-gradient(var(--transparent) 45%, var(--cupcake-trap) 45%, var(--cupcake-trap) 58%, var(--transparent) 58%)
+    /* front teeth */
+    conic-gradient(var(--transparent) 43%, var(--cupcake-trap) 43%, var(--cupcake-trap) 49%, var(--transparent) 49%),
+    conic-gradient(var(--transparent) 46%, var(--cupcake-trap) 46%, var(--cupcake-trap) 54%, var(--transparent) 54%),
+    conic-gradient(var(--transparent) 46%, var(--cupcake-trap) 46%, var(--cupcake-trap) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 45%, var(--cupcake-trap) 45%, var(--cupcake-trap) 58%, var(--transparent) 58%),
+    conic-gradient(var(--transparent) 44%, var(--cupcake-trap) 44%, var(--cupcake-trap) 57%, var(--transparent) 57%),
+    conic-gradient(var(--transparent) 43%, var(--cupcake-trap) 43%, var(--cupcake-trap) 56%, var(--transparent) 56%),
+    conic-gradient(var(--transparent) 42%, var(--cupcake-trap) 42%, var(--cupcake-trap) 56%, var(--transparent) 56%),
+    conic-gradient(var(--transparent) 40%, var(--cupcake-trap) 40%, var(--cupcake-trap) 56%, var(--transparent) 56%),
+    conic-gradient(var(--transparent) 42%, var(--cupcake-trap) 42%, var(--cupcake-trap) 56%, var(--transparent) 56%),
+    conic-gradient(var(--transparent) 51%, var(--cupcake-trap) 51%, var(--cupcake-trap) 58%, var(--transparent) 58%)
     ;
 
   background-size:
-    15px 80px,
+    /* front teeth */
+    26px 60px,
     20px 92px,
-    40px 120px,
-    50px 116px
+    40px 116px,
+    50px 116px,
+    50px 110px,
+    43px 103px,
+    36px 92px,
+    30px 80px,
+    24px 68px,
+    33px 60px
     ;
 
   background-position:
-    4px 140px,
-    16px 147px,
-    32px 138px,
-    68px 156px
-;
+    /* front teeth */
+    -6px 162px,
+    16px 148px,
+    33px 142px,
+    68px 160px,
+    108px 171px,
+    151px 179px,
+    192px 186px,
+    226px 190px,
+    254px 186px,
+    273px 172px
+    ;
   
   z-index: 1;
   transform: rotate(-3deg);
 }
 
 #cupcake div::after {
-  outline: 1px solid lime;
   width: 300px;
   height: 300px;
   background-repeat: no-repeat;
@@ -90,7 +200,7 @@
   background-image:
 
     /* cherry */
-    radial-gradient(circle, White 50%, var(--transparent) 50%),
+    radial-gradient(circle, var(--cupcake-highlight) 50%, var(--transparent) 50%),
     radial-gradient(ellipse, var(--cupcake-cherry)  50%, var(--transparent) 51%),
 
     /* frosting */
@@ -112,7 +222,7 @@
     50px 40px,
 
     /* frosting */
-    170px 56px,
+    168px 57px,
     64px 62px,
     64px 65px,
     130px 80px,
@@ -120,24 +230,24 @@
     /* cup */
     75px 66px,
     75px 66px,
-    126px 12px;
+    128px 24px;
 
   background-position:
 
     /* cherry */
-    53% 64px,
-    50% 52px,
+    53% 78px,
+    50% 64px,
 
     /* frosting */
-    50% 126px,
-    left 64px top 114px,
-    right 64px top 110px,
-    50% 72px,
+    50% 129px,
+    left 67px top 120px,
+    right 66px top 116px,
+    50% 76px,
 
     /* cup */
-    left 76px bottom 70px,
-    right 76px bottom 70px,
-    50% 224px;
+    left 76px bottom 74px,
+    right 76px bottom 74px,
+    50% 214px;
 
     transform: rotate(-2deg)
 

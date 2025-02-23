@@ -126,28 +126,6 @@ details p {
   max-width: 400px;
 }
 
-.artwork{
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  min-height: 376px;
-  position: relative;
-  overflow: hidden;
-}
-
-.artwork div{
-  position:absolute;
-  left:50%;
-  top:50%;
-}
-
-.artwork div:before,
-.artwork div:after {
-  display: block;
-  content: '';
-  position: absolute;
-}
-
 .artwork.full-width {
   grid-column: span 6;
 }
@@ -206,25 +184,53 @@ details p {
 
 #skull {
   background-color: slateblue;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 376px;
+  position: relative;
+  overflow: hidden;
 }
 
 #flower {
   background-color: pink;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 376px;
+  position: relative;
+  overflow: hidden;
 }
 
 #cup {
   background-color: coral;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 376px;
+  position: relative;
+  overflow: hidden;
 }
 
 #pizza {
   background-color: slateblue;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 376px;
+  position: relative;
+  overflow: hidden;
 }
 
 #bunny {
   background-color: pink;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 376px;
+  position: relative;
+  overflow: hidden;
 }
-
-
 
 
 
