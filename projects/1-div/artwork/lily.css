@@ -1,0 +1,91 @@
+:root {
+  --transparent: rgba(0, 0, 0, 0);
+  --lily-background: CadetBlue;
+  --lily-shadow: rgba(3, 13, 31, 0.2);
+  --lily-highlight: rgba(223, 216, 193, 0.8);
+  --lily-leaf: SeaGreen;
+  --lily-hair: DarkSlateGrey;
+  --lily-skin: BurlyWood;
+}
+
+#lily {
+  background-color: var(--lily-background);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+
+#lily div:before,
+#lily div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+#lily div {
+  position:absolute;
+  left: auto;
+  top: 8%;
+  width: 400px;
+  height: 300px;
+  background-repeat: no-repeat;
+  outline: 1px solid var(--lily-highlight);
+
+  /* box-shadow: -8px -5px 0 -4px var(--lily-shadow),
+              6px 6px 0 -5px var(--lily-highlight); maybe */
+
+  background-image: 
+  radial-gradient(ellipse, var(--lily-shadow) 50%, var(--transparent) 50%);
+   
+
+  background-size:
+  100px 100px;
+
+  
+  background-position:
+  50% 50%;
+
+}
+
+
+#lily div::before {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+
+  background-image:
+  radial-gradient(ellipse, var(--lily-hair) 50%, var(--transparent) 50%),
+  radial-gradient(ellipse, var(--lily-skin) 50%, var(--transparent) 50%);
+
+  background-size:
+    60px 60px,
+    70px 70px;
+
+  background-position:
+    60% 40%,
+    50% 50%;
+}
+
+#lily div::after {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+
+  background-image:
+  radial-gradient(ellipse, var(--lily-leaf) 50%, var(--transparent) 50%),
+  radial-gradient(ellipse, var(--lily-leaf) 50%, var(--transparent) 50%);
+
+
+  background-size:
+    50px 70px,
+    70px 70px;
+
+  background-position:
+    50% 30%,
+    70% 30%;
+
+
+}
