@@ -1,15 +1,20 @@
 :root {
   --transparent: rgba(0, 0, 0, 0);
-  --lily-background: CadetBlue;
+  --lily-background: SteelBlue;
   --lily-shadow: rgba(3, 13, 31, 0.2);
   --lily-highlight: rgba(223, 216, 193, 0.8);
-  --lily-leaf: SeaGreen;
+  --lily-leaf: YellowGreen;
+  --lily-leaf-darker: DarkSeaGreen;
   --lily-hair: DarkSlateGrey;
   --lily-skin: BurlyWood;
 }
 
 #lily {
+  /* background-image: url("./sketches/lily.png"); */
   background-color: var(--lily-background);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -38,15 +43,224 @@
               6px 6px 0 -5px var(--lily-highlight); maybe */
 
   background-image: 
-  radial-gradient(ellipse, var(--lily-shadow) 50%, var(--transparent) 50%);
-   
+
+  /* leaves */
+
+  conic-gradient(
+    var(--lily-background) 8%,
+    var(--transparent) 8%),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%),
+
+  conic-gradient(
+    var(--transparent) 86%,
+    var(--lily-background) 86%,
+    var(--lily-background) 96%,
+    var(--transparent) 96%),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%),
+
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf-darker) 50%,
+    var(--transparent) 50%),
+
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%),
+
+  conic-gradient(
+    var(--transparent) 36%,
+    var(--lily-background) 36%,
+    var(--lily-background) 44%,
+    var(--transparent) 44%),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%
+    ),
+
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf-darker) 50%,
+    var(--transparent) 50%
+    ),
+
+  conic-gradient(
+    var(--transparent) 7%,
+    var(--lily-background) 7%,
+    var(--lily-background) 16%,
+    var(--transparent) 16%
+    ),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf-darker) 50%,
+    var(--transparent) 50%
+    ),
+
+  conic-gradient(
+    var(--transparent) 48%,
+    var(--lily-background) 48%,
+    var(--lily-background) 57%,
+    var(--transparent) 57%
+    ),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%
+    ),
+
+  conic-gradient(
+    var(--transparent) 82%,
+    var(--lily-background) 82%,
+    var(--lily-background) 95%,
+    var(--transparent) 95%
+    ),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf-darker) 50%,
+    var(--transparent) 50%
+    ),
+
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf-darker) 50%,
+    var(--transparent) 50%
+    ),
+
+  conic-gradient(
+    var(--transparent) 50%,
+    var(--lily-background) 50%,
+    var(--lily-background) 60%,
+    var(--transparent) 60%
+    ),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%
+    ),
+
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf-darker) 50%,
+    var(--transparent) 50%
+    ),
+
+  conic-gradient(
+    var(--transparent) 40%,
+    var(--lily-background) 40%,
+    var(--lily-background) 50%,
+    var(--transparent) 50%
+    ),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%
+    ),
+
+  conic-gradient(
+    var(--transparent) 6%,
+    var(--lily-background) 6%,
+    var(--lily-background) 14%,
+    var(--transparent) 14%
+    ),
+  radial-gradient(
+    ellipse,
+    var(--lily-leaf) 50%,
+    var(--transparent) 50%
+    )
+  ;
+
 
   background-size:
-  100px 100px;
+
+  /* leaves */
+  26px 24px,
+  60px 38px,
+
+  26px 24px,
+  60px 38px,
+
+  38px 24px,
+
+  41px 26px,
+
+  36px 50px,
+  78px 50px,
+
+  33px 20px,
+
+  26px 24px,
+  60px 38px,
+
+  30px 40px,
+  86px 54px,
+
+  15px 15px,
+  38px 24px,
+
+  33px 20px,
+
+  30px 40px,
+  86px 54px,
+
+  40px 25px,
+
+  38px 24px,
+  50px 32px,
+
+  20px 16px,
+  46px 29px
+  ;
 
   
   background-position:
-  50% 50%;
+
+  /* leaves */
+  38px 184px,
+  20px 180px,
+
+  72px 139px,
+  58px 134px,
+
+  56px 157px,
+
+  79px 216px,
+
+  110px 188px,
+  88px 188px,
+
+  118px 116px,
+
+  150px 240px,
+  132px 236px,
+
+  189px 192px,
+  162px 186px,
+
+  242px 198px,
+  234px 196px,
+
+  252px 124px,
+
+  275px 216px,
+  250px 210px,
+
+  292px 202px,
+
+  342px 226px,
+  336px 222px,
+
+  322px 132px,
+  310px 128px
+
+
+  ;
 
 }
 
@@ -56,7 +270,7 @@
   height: 300px;
   background-repeat: no-repeat;
 
-  background-image:
+  /* background-image:
   radial-gradient(ellipse, var(--lily-hair) 50%, var(--transparent) 50%),
   radial-gradient(ellipse, var(--lily-skin) 50%, var(--transparent) 50%);
 
@@ -66,7 +280,7 @@
 
   background-position:
     60% 40%,
-    50% 50%;
+    50% 50%; */
 }
 
 #lily div::after {
@@ -74,7 +288,7 @@
   height: 300px;
   background-repeat: no-repeat;
 
-  background-image:
+  /* background-image:
   radial-gradient(ellipse, var(--lily-leaf) 50%, var(--transparent) 50%),
   radial-gradient(ellipse, var(--lily-leaf) 50%, var(--transparent) 50%);
 
@@ -85,7 +299,7 @@
 
   background-position:
     50% 30%,
-    70% 30%;
+    70% 30%; */
 
 
 }
