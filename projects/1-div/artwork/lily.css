@@ -2,15 +2,15 @@
   --transparent: rgba(0, 0, 0, 0);
   --lily-background: SteelBlue;
   --lily-shadow: rgba(3, 13, 31, 0.2);
-  --lily-highlight: rgba(223, 216, 193, 0.8);
+  --lily-highlight: rgba(223, 216, 193, 0.6);
   --lily-leaf: YellowGreen;
   --lily-leaf-darker: DarkSeaGreen;
-  --lily-hair: DarkSlateGrey;
-  --lily-skin: BurlyWood;
+  --lily-hair: rgba(0, 0, 0, 1); /* DarkSlateGrey */
+  --lily-skin: rgba(105, 21, 98, 0.4); /* BurlyWood */
 }
 
 #lily {
-  /* background-image: url("./sketches/lily.png"); */
+  background-image: url("./sketches/lily.png");
   background-color: var(--lily-background);
   background-repeat: no-repeat;
   background-size: 400px;
@@ -266,25 +266,143 @@
 
 
 #lily div::before {
-  width: 300px;
+  width: 400px;
   height: 300px;
   background-repeat: no-repeat;
 
-  /* background-image:
-  radial-gradient(ellipse, var(--lily-hair) 50%, var(--transparent) 50%),
-  radial-gradient(ellipse, var(--lily-skin) 50%, var(--transparent) 50%);
+  background-image:
+
+    radial-gradient(
+      110% 130% at 85% 6%,
+      var(--transparent) 80%,
+      pink 80%
+      ),
+
+    radial-gradient(
+      110% 130% at 15% 8%,
+      var(--transparent) 76%,
+      pink 76%
+      ),
+
+    /* hair left */
+
+    radial-gradient(
+      96% 130% at 100% 110%,
+      var(--transparent) 40%,
+      var(--lily-hair) 40%,
+      var(--lily-hair) 82%,
+      var(--transparent) 82%
+      ),
+
+      radial-gradient(
+        120% 160% at 0% 0%,
+        var(--lily-hair) 78%,
+        var(--transparent) 78%
+        ),
+
+    radial-gradient(
+      100% 100% at 50% 0%,
+      var(--lily-hair) 50%,
+      var(--transparent) 50%
+      ),
+
+    radial-gradient(
+      120% 160% at 0% 0%,
+      var(--transparent) 76%,
+      var(--lily-hair) 76%
+      ),
+
+    /* hair right */
+
+    radial-gradient(
+      90% 124% at 22% 108%,
+      var(--transparent) 46%,
+      var(--lily-hair) 46%,
+      var(--lily-hair) 84%,
+      var(--transparent) 84%
+      ),
+
+    radial-gradient(
+      120% 166% at 90% -28%,
+      var(--transparent) 78%,
+      var(--lily-hair) 78%
+      ),
+
+    radial-gradient(
+      150% 100% at 8% 0%,
+      var(--lily-hair) 50%,
+      var(--transparent) 50%
+      ),
+
+    radial-gradient(
+      110% 110% at 85% 16%,
+      var(--lily-hair) 76%,
+      var(--transparent) 76%
+      ),
+
+    radial-gradient(
+      100% 100% at 52% 16%,
+      var(--lily-hair) 76%,
+      var(--transparent) 76%
+      ),
+
+    /* face */
+
+
+
+    radial-gradient(
+      ellipse,
+      var(--lily-skin) 50%,
+      var(--transparent) 50%
+      )
+      ;
 
   background-size:
-    60px 60px,
-    70px 70px;
+
+    12px 16px,
+    12px 16px,
+
+    /* hair */
+    70px 68px,
+    21px 42px,
+    47px 8px,
+    75px 60px,
+
+    80px 68px,
+    50px 50px,
+    48px 48px,
+    24px 50px,
+
+    100px 44px,
+
+    /* face */
+    180px 100px;
 
   background-position:
-    60% 40%,
-    50% 50%; */
+
+    200px 133px,
+    188px 133px,
+
+    /* hair */
+    120px 76px,
+    144px 144px,
+    108px 186px,
+    69px 126px,
+
+    190px 74px,
+    264px 118px,
+    264px 168px,
+    240px 142px,
+
+    150px 108px,
+
+
+    /* face */
+    112px 102px;
 }
 
 #lily div::after {
-  width: 300px;
+  width: 400px;
   height: 300px;
   background-repeat: no-repeat;
 
