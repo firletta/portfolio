@@ -1,8 +1,8 @@
 :root {
   --color-primary: LightSalmon;
   --color-accent: LightSalmon;
-  --color-background: MidnightBlue;
-  --color-logo: MidnightBlue;
+  --color-background: DarkSlateBlue;
+  --color-logo: DarkSlateBlue;
 }
 
 *, *::before, *::after {
