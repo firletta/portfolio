@@ -1,15 +1,15 @@
 :root {
   --transparent: rgba(0, 0, 0, 0);
-  --lily-background: SteelBlue;
+  --lily-background: DarkSlateBlue;
   --lily-shadow: rgba(3, 13, 31, 0.2);
   --lily-highlight: rgba(223, 216, 193, 0.6);
-  --lily-leaf: MediumSeaGreen;
-  --lily-leaf-darker: DarkSeaGreen;
-  --lily-hair: Black;
+  --lily-leaf: MediumAquamarine;
+  --lily-leaf-darker: CadetBlue;
+  --lily-hair: MidnightBlue;
   --lily-skin: BurlyWood;
   --lily-blush: DarkSalmon;
   --lily-eyes: GhostWhite;
-  --lily-frog: Green;
+  --lily-frog: Teal;
 }
 
 #lily {
