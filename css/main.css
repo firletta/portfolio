@@ -366,6 +366,12 @@ ul.skills li {
   }
 }
 
+.signature {
+  max-height: 3rem;
+  width: auto;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 430px) {
   .projects {
     grid-template-columns: 1fr;
