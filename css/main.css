@@ -44,12 +44,12 @@ main {
 
 h1 {
   font-size: var(--font-xxl);
-  font-weight: 750;
+  font-weight: 700;
 }
 
 h2 {
   font-size: var(--font-xl);
-  font-weight: 700;
+  font-weight: 650;
 }
 
 h3 {
