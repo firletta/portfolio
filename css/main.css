@@ -399,3 +399,34 @@ ul.skills li {
     gap: var(--gap-s);
   } 
 }
+/* HEADLINE HOVER ICONS */
+
+.hover-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hover-letter {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+}
+
+/* sizes and fades are animated in js/hover-icons.js */
+.hover-glyph,
+.hover-icon {
+  display: inline-block;
+}
+
+.hover-icon {
+  bottom: 0;
+  font-size: 1em;
+  left: 50%;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%) scale(0.4);
+  transform-origin: bottom center;
+}
