@@ -9,8 +9,8 @@
   --font-xl: 1.5rem; /* 24px */
   --font-xxl: 2.25rem; /* 36px */
   --font-xxxl: 3rem; /* 48px */
-  --gap-s: 12px;
-  --gap-l: 24px;
+  --gap-s: 0.875rem;
+  --gap-l: 1.125rem;
 }
 
 body {
@@ -49,22 +49,22 @@ h1 {
 
 h2 {
   font-size: var(--font-xl);
-  font-weight: 650;
+  font-weight: 700;
 }
 
 h3 {
   font-size: var(--font-l);
-  font-weight: 600;
+  font-weight: 650;
 }
 
 h4 {
   font-size: var(--font-m);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
   font-size: var(--font-m);
-  font-weight: 400;
+  font-weight: 450;
   text-wrap: pretty;
 }
 
@@ -126,7 +126,8 @@ a:focus:not(:focus-visible) {
   );
   grid-column: 1 / span 2;
   height: 4px;
-  margin-top: 4px;
+  margin-top: var(--gap-s);
+  margin-bottom: var(--gap-s);
   position: relative;
 }
 
@@ -224,6 +225,7 @@ ul.skills li {
   background-color: var(--accent-color);
   color: var(--primary-color);
   font-size: var(--font-s);
+  font-weight: 450;
   padding: 2px 6px;
 }
 
